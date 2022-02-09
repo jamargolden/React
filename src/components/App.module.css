@@ -1,0 +1,422 @@
+@font-face {
+    font-family: 'Nav Font';
+    src: url('../fonts/ArgentumSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "RobotoCondensed-Regular";
+    src: local("RobotoCondensed-Regular"),
+      url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+@font-face {
+    font-family: 'Name Font';
+    src: url('../fonts/ArgentumSans-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'Name Font Reg';
+    src: url('../fonts/ArgentumSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "OpenSans";
+    src: local("OpenSans"),
+      url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: 300;
+  }
+  @font-face{
+    font-family: "Argent";
+    src: local("ArgentumSans"),
+      url("../fonts/ArgentumSans-BlackItalic.ttf") format("truetype");
+    font-weight: 300;
+  }
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(31, 31, 31, 0.678);
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.849);
+    border-radius: 1rem;
+}
+.app{
+    width: 100%;
+    margin-left: 0;
+    padding: 0, 1rem;
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.arrow{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    margin: auto;
+    margin-right: 1rem;
+    justify-content: center;
+    position: absolute;
+    top: 92vh;
+    margin-bottom: 1rem;
+}
+.burgerContainer{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 101;
+    overflow: hidden;
+    position: fixed;
+}.burger{
+    background-color: transparent;
+    border: none;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+.logo{
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+.nav{
+    background-color: rgba(82, 82, 82, 0.712);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.links{
+    list-style: none;
+    align-content: center;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+}
+.link{
+    font-size: 3rem;
+    font-family: 'Name Font Reg';
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.btn{
+    width: 25vh;
+    height: 4vh;
+    border-radius: 2rem;
+    border: solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.096);
+    backdrop-filter: blur(2px);
+    font-size: 1rem;
+    font-family: "Nav Font";
+    margin-top: .5rem;
+}
+.container{
+    margin: auto;
+    padding: 0;
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    z-index: 1;
+}
+.container2{
+    margin: auto;
+    padding: 0;
+    width: 3rem;
+}
+.title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    z-index: 2;
+}
+.dev{
+    color: white;
+    font-family: "Nav Font";
+    font-size: clamp(1.5rem, 1vh, 4rem);
+    margin-top: 55vh;
+    z-index: 2;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    font-size: clamp(3rem, 7vh, 6rem);
+    font-family: "Name Font";
+}
+.nameReg{
+    font-size: clamp(3rem, 7vh, 6rem);
+    font-family: "Nav Font";
+}
+.p{
+    font-family: sans-serif;
+    color: white;
+    padding-top: 9rem;
+    font-size: 1.5rem;
+}
+.projects{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.projectContainer{
+    width: 91vw;
+    height: 30vh;
+    background-color: rgba(43, 43, 43, 0.767);
+    backdrop-filter: blur(2px);
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 0;
+    margin-right: 0;
+}
+.projectContainer1{
+    width: 91vw;
+    height: 30vh;
+    background-color: rgba(100, 232, 255, 0.733);
+    backdrop-filter: blur(2px);
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 0;
+}
+.weatherLogo{
+    width: 5rem;
+}
+.grain{
+    pointer-events: none;
+    background-size: cover;
+    position: fixed;
+    z-index: 10;
+    opacity: .5;
+    mix-blend-mode: screen;
+  }
+.title1{
+    font-family: "Argent";
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.87);
+    margin: 0;
+    letter-spacing: -.2rem;
+    filter: drop-shadow(.5rem .5rem .25rem rgba(0, 0, 0, 0.178));
+  }
+.title2{
+    font-family: "OpenSans";
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    
+    letter-spacing: -.2rem;
+    filter: drop-shadow(.5rem .5rem .25rem rgba(0, 0, 0, 0.555));
+  }
+.weather{
+    font-family: RobotoCondensed-Regular;
+    text-shadow: 2px 2px gray;
+    color: white;
+    font-size: 2rem;
+}
+.about{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+}
+.bottom{
+    width: 70%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.377);
+    backdrop-filter: blur(2px);
+    border-radius: 1rem;
+    justify-content: center;
+    overflow-x: hidden;
+    align-items: center;
+}
+.aboutTitle{
+    font-size: 3rem;
+    font-family: 'Name Font';
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.938);
+    text-align: left;
+    filter: drop-shadow(.5rem .5rem .25rem rgba(0, 0, 0, 0.438));
+    letter-spacing: -.2rem;
+}
+.para{
+    font-size: 1.4rem;
+    font-family: 'Nav Font';
+    color: rgba(255, 255, 255, 0.767);
+    margin: .5rem;
+    width: 88%;
+    letter-spacing: -.09rem;
+    filter: drop-shadow(.5rem .5rem .25rem rgba(0, 0, 0, 0.274));
+}
+.email{
+    width: 11.5rem;
+    height: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.342);
+    margin: 1rem;
+    margin-bottom: 3rem;
+    padding: .5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.globe{
+    width: 1rem;
+}
+.address{
+    color: white;
+    font-size: .75rem;
+    font-family: "Nav Font";
+    margin-right: .2rem;
+}
+@media screen and (max-width: 767px) {
+    .title{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        z-index: 2;
+    }
+    .name{
+        font-size: clamp(3rem, 7vh, 6rem);
+        font-family: "Name Font";
+        margin-bottom: 0;
+    }
+    .nameReg{
+        font-size: clamp(3rem, 7vh, 6rem);
+        font-family: "Nav Font";
+        margin-top: -1rem;
+    }
+    .dev{
+        color: white;
+        font-family: "Nav Font";
+        font-size: clamp(1rem, 1vh, 4rem);
+        margin-top: 58vh;
+        z-index: 2;
+    }
+    .link{
+        font-size: 1.5rem;
+        font-family: 'Name Font Reg';
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+
+    .projects{
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    .projectContainer{
+        width: 91vw;
+        height: 30vh;
+        background-color: rgba(43, 43, 43, 0.767);
+        backdrop-filter: blur(2px);
+        border-radius: 1rem;
+        margin: 1rem;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .projectContainer1{
+        width: 91vw;
+        height: 30vh;
+        background-color: rgba(100, 232, 255, 0.733);
+        backdrop-filter: blur(2px);
+        border-radius: 1rem;
+        margin: 1rem;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .contents{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+    }
+    .bottom{
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+}
